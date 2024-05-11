@@ -1,0 +1,56 @@
+[
+   {
+      "id": "1",
+      "recipe_image": "https://i.ibb.co/P5Wvg4S/card.png",
+      "recipe_name": "Americano Pizza",
+      "short_description": "A flavorful chicken curry with aromatic spices.",
+      "ingredients": ["300 g all-purpose flour", "7 g active dry yeast", "1 tsp sugar", "1 tsp salt", "200 ml warm water", "100 g pizza sauce", "200 g mozzarella cheese", "Assorted toppings (pepperoni, mushrooms, bell peppers, etc.)"],
+      "preparing_time": "45 minutes",
+      "calories": "320 kcal"
+   },
+   {
+      "id": "2",
+      "recipe_image": "https://i.ibb.co/XpcRR5K/card2.png",
+      "recipe_name": "Chicago Deep-Dish Pizza",
+      "short_description": "Classic Italian pasta dish with creamy sauce and crispy bacon.",
+      "ingredients": ["300 g spaghetti", "150 g pancetta or bacon", "2 eggs", "50 g grated Parmesan cheese", "2 cloves garlic", "Black pepper"],
+      "preparing_time": "25 minutes",
+      "calories": "450 kcal"
+   },
+   {
+      "id": "3",
+      "recipe_image": "https://i.ibb.co/FYpg0bj/card3.png",
+      "recipe_name": "Margherita Pizza",
+      "short_description": "A refreshing salad with tomatoes, cucumbers, feta cheese, and olives.",
+      "ingredients": ["2 tomatoes", "1 cucumber", "100 g feta cheese", "50 g black olives", "1 red onion", "Olive oil, vinegar, salt, and pepper for dressing"],
+      "preparing_time": "15 minutes",
+      "calories": "180 kcal"
+   },
+   {
+      "id": "4",
+      "recipe_image": "https://i.ibb.co/SVJ4vqP/card4.png",
+      "recipe_name": "Sicilian Pizza",
+      "short_description": "A nutritious smoothie packed with mixed berries and yogurt.",
+      "ingredients": ["1 cup mixed berries strawberries,", "1 banana", "150 ml yogurt", "50 ml milk", "1 tablespoon honey"],
+      "preparing_time": "10 minutes",
+      "calories": "200 kcal"
+   },
+   {
+      "id": "5",
+      "recipe_image": "https://i.ibb.co/mNYwjVW/card5.png",
+      "recipe_name": "Hawaiian Pizza",
+      "short_description": "A colorful stir-fry with assorted vegetables and tofu in a savory sauce.",
+      "ingredients": ["200 g tofu", "1 red bell pepper", "1 yellow bell pepper", "1 zucchini", "100 g broccoli florets", "150 g snap peas"],
+      "preparing_time": "20 minutes",
+      "calories": "250 kcal"
+   },
+   {
+      "id": "6",
+      "recipe_image": "https://i.ibb.co/CMv22zP/card6.png",
+      "recipe_name": "California Pizza.",
+      "short_description": "A hearty Italian vegetable soup with pasta and beans.",
+      "ingredients": ["1 onion", "2 carrots", "2 celery stalks", "2 garlic cloves", "400 g canned tomatoes", "100 g pasta", "200 g mixed beans"],
+      "preparing_time": "40 minutes",
+      "calories": "280 kcal"
+   }
+]
