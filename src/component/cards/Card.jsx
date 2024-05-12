@@ -1,7 +1,8 @@
 import { IoTimeOutline } from "react-icons/io5";
 import { FaFireFlameCurved } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
-const Card = ({ card }) => {
+const Card = ({ card, handleCardBtn }) => {
    const { recipe_image, recipe_name, short_description, ingredients, preparing_time, calories, } = card;
    return (
       <div className="card bg-base-100 shadow-xl px-2 py-4">
@@ -34,7 +35,10 @@ const Card = ({ card }) => {
                </p>
             </div>
             <div className="card-actions justify-end">
-               <button className="btn bg-pint text-white rounded-3xl">Want to Cook</button>
+               <Link onClick={() => handleCardBtn(card)}>
+                  <button className="btn bg-pint text-white rounded-3xl">Want to Cook</button>
+                 
+               </Link>
             </div>
          </div>
       </div>
