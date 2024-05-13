@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const Card = ({ card, handleCardBtn }) => {
    const { recipe_image, recipe_name, short_description, ingredients, preparing_time, calories, } = card;
    return (
+      
       <div className="card bg-base-100 shadow-xl px-2 py-4">
          <figure>
             <img className="w-80 h-56 rounded-xl" src={recipe_image} alt="Shoes" />
