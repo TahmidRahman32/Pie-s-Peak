@@ -3,10 +3,12 @@ import { useState } from "react";
 import Card from "./Card";
 import toast from "react-hot-toast";
 import CookTable from "../CookTable/CookTable";
+import TotalTable from "../TotalTable/TotalTable";
 
 const Cards = () => {
    const [cards, setCards] = useState([]);
    const [orders, setOrders] = useState([]);
+   const [current, setCurrent] = useState([]);
 
    useEffect(() => {
       fetch("data.json")
@@ -21,16 +23,16 @@ const Cards = () => {
          setOrders(orderItem);
       } else {
          toast.error("This didn't work.");
-         
       }
       // console.log(count);
    };
 
-   const handlePreparingBtn = ()=>{
-        
-    
-      console.log('up');
-   }
+   const handlePreparingBtn = () => {
+      setOrders([]);
+      const newCurrent = [...orders];
+      setCurrent(newCurrent);
+      console.log("up", newCurrent);
+   };
 
    return (
       <div>
@@ -50,7 +52,7 @@ const Cards = () => {
             </div>
             <div className="col-span-1 px-6 shadow-lg py-2">
                <div className="text-center my-2">
-                  <h2 className="text-2xl"> Want to cook: {orders.length} </h2>
+                  <h2 className="text-xl font-semibold uppercase"> Want to cook: {orders.length} </h2>
                </div>
                <div className="overflow-x-auto">
                   <table className="table">
@@ -70,7 +72,7 @@ const Cards = () => {
                   ))}
                </div>
                <div className="text-center my-2 mt-8">
-                  <h2 className="text-2xl"> Currently cooking:{orders.length} </h2>
+                  <h2 className="text-2xl font-bold"> Currently cooking:{current.length} </h2>
                </div>
                <div className="overflow-x-auto ">
                   <table className="table">
@@ -79,12 +81,13 @@ const Cards = () => {
                            <th>Name</th>
                            <th>Time</th>
                            <th>Calories</th>
-                           <th></th>
                         </tr>
                      </thead>
                   </table>
                </div>
-            
+               <div>
+                  {current.map((total) => <TotalTable key={total.id} total={total}></TotalTable> )}
+               </div>
             </div>
          </div>
       </div>

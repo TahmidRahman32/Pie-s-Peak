@@ -8,7 +8,7 @@ const CookTable = ({ cooking, handlePreparingBtn }) => {
             <p>{recipe_name.slice(0, 20)}</p>
             <p>{preparing_time}</p>
             <p>{calories}</p>
-            <button onClick={handlePreparingBtn} className="bg-pint text-white px-2 py-1 rounded-2xl ">
+            <button onClick={ () => handlePreparingBtn()} className="bg-pint text-white px-2 py-1 rounded-2xl ">
                Preparing
             </button>
             {/* <th>1</th>
