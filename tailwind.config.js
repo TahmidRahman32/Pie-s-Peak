@@ -7,7 +7,7 @@ export default {
             pint: "#02b76c",
          },
          backgroundImage: {
-            "banner-img": "url('./src/assets/img/portrait-senior-pizzeria-chef-portrait-chef-work-delivering-fresh-pizza.png')",
+            "banner-img": "url('/src/assets/img/portrait-senior-pizzeria-chef-portrait-chef-work-delivering-fresh-pizza.png')",
            
          },
       },
